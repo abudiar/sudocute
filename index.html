@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>9X9 Sudoku Solver</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="gradient-purple-blue">
+    <div class="wrapSudoku">
+      <p>9x9 Sudoku Solver</p>
+      <div id="alert"></div>
+      <div class="backSudoku">
+        <table id="table"></table>
+      </div>
+      <table id="table">
+        <tr>
+          <td>
+            <div class="comment" id="comment"></div>
+          </td>
+          <td>
+            <div class="comment" id="reset"></div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="container-btn">
+      <div class="wrap-btn">
+        <button class="btn" onclick="doSudoku();">
+          Solve
+        </button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

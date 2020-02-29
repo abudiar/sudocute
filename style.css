@@ -1,0 +1,191 @@
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  color: darkgrey;
+  height: 100vh;
+  width: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+div {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 10px;
+  font-size: 40px;
+  text-align: center;
+}
+button {
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 20px;
+  background: white;
+  border: 1 solid darkgrey;
+  transition: all 0.4s;
+  /* position: absolute;
+  left: 50%;
+  transform: translateX(-50%); */
+}
+
+button:hover {
+  letter-spacing: 3px;
+  transition: all 0.4s;
+}
+
+#alert {
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  color: black;
+  padding-bottom: 10px;
+}
+
+#table {
+  width: 100%;
+}
+
+.comment {
+  width: 100%;
+}
+
+.container-btn {
+  position: absolute;
+  z-index: 1000;
+  width: 100vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: fit-content;
+  padding: 50px 0 50px 0;
+  bottom: 0;
+  left: auto;
+  right: auto;
+}
+
+.wrap-btn {
+  bottom: 0;
+  z-index: 1000;
+  padding: 5px;
+  margin: 0;
+  border-radius: 61px;
+  background: linear-gradient(
+    45deg,
+    rgba(147, 249, 185, 1) 0%,
+    rgba(147, 206, 249, 1) 50%,
+    rgb(253, 201, 255) 100%
+  );
+  -webkit-box-shadow: 5px 5px 40px -10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 5px 5px 40px -10px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 40px -10px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.wrap-btn:hover {
+  padding: 0px;
+  border-radius: 49px;
+  margin-bottom: 8px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.wrap-btn .btn {
+  width: 102px;
+  height: 102px;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: none;
+  justify-content: center;
+  border-radius: 51px;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 255, 255, 1);
+  color: #333333;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  margin: 0;
+}
+
+.wrap-btn:hover .btn {
+  color: #fff;
+  background: #666666;
+  opacity: 1;
+  width: 98px;
+  height: 98px;
+  letter-spacing: 3px;
+  transition: all 0.4s ease 0s;
+  background: rgb(147, 249, 185);
+  background: linear-gradient(
+    -45deg,
+    rgba(147, 249, 185, 1) 0%,
+    rgba(147, 206, 249, 1) 50%,
+    rgba(202, 148, 233, 1) 100%
+  );
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.gradient-purple-blue {
+  background: linear-gradient(
+    -135deg,
+    rgb(124, 202, 212) 0%,
+    rgb(156, 172, 214) 50%,
+    rgb(211, 166, 212) 100%
+  );
+}
+
+.inputSudoku {
+  width: 40px;
+  height: 40px;
+  font-size: larger;
+  text-align: center;
+  padding: 0px;
+  border: 1px solid white;
+  background: white;
+}
+
+.wrapSudoku {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 40px -10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 5px 5px 40px -10px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 40px -10px rgba(0, 0, 0, 0.4);
+}
+
+th {
+  padding: 0px;
+  border: 1px solid darkgrey;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
